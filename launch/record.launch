@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <arg name="recording_directory" value="/tmp"/>
+
+    <node name="roscap_record_node" pkg="roscap" type="record" output="screen"
+          args="record -o $(arg recording_directory)/recording --repeat-latched --zstd --split --duration 300 -a" />
+</launch>

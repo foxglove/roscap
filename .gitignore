@@ -49,3 +49,10 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
+
+# System and IDE files
+.DS_Store
+.vscode
+
+# Recording files
+*.mcap
