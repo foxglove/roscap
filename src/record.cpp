@@ -158,7 +158,7 @@ roscap::RecorderOptions parseOptions(int argc, char** argv) {
         }
         ROS_DEBUG("roscap using minimum space of %lld bytes, or %s", opts.min_space, opts.min_space_str.c_str());
     }
-    if (vm.count("bz2") && vm.count("lz4"))
+    if (vm.count("zstd") && vm.count("lz4"))
     {
       throw ros::Exception("Can only use one type of compression");
     }
